@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Set
 %define	pnam	Bag
-%include	/usr/lib/rpm/macros.perl
 Summary:	Set-Bag perl module
 Summary(pl):	Modu³ perla Set-Bag
 Name:		perl-Set-Bag
 Version:	1.007
-Release:	7
-
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -22,7 +21,7 @@ Set-Bag perl module.
 Modu³ perla Set-Bag.
 
 %prep
-%setup -q -n Set-Bag-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
