@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests	# don't perform "make test"
+%bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Set
@@ -39,7 +39,8 @@ Ten modu³ jest implementacj± klasy prostego worka (wielu zbiorów).
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
