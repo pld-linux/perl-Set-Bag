@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Set
 %define	pnam	Bag
-Summary:	Set-Bag perl module
-Summary(pl):	Modu³ perla Set-Bag
+Summary:	Set::Bag perl module
+Summary(pl):	Modu³ perla Set::Bag
 Name:		perl-Set-Bag
 Version:	1.007
 Release:	8
@@ -15,10 +15,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Set-Bag perl module.
+Set::Bag perl module.
 
 %description -l pl
-Modu³ perla Set-Bag.
+Modu³ perla Set::Bag.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
