@@ -5,12 +5,12 @@ Summary:	Set::Bag - bag (multiset) class
 Summary(pl):	Set::Bag - klasa prostego worka (wielu zbiorów)
 Name:		perl-Set-Bag
 Version:	1.008
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -24,7 +24,8 @@ Ten modu³ jest implementacj± klasy prostego worka (wielu zbiorów).
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -38,5 +39,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README TODO
-%{perl_sitelib}/Set/Bag.pm
+%{perl_vendorlib}/Set/Bag.pm
 %{_mandir}/man3/*
