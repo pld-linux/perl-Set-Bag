@@ -26,7 +26,7 @@ Ten modu³ jest implementacj± klasy prostego worka (wielu zbiorów).
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
