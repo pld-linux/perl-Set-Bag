@@ -24,7 +24,7 @@ Ten modu³ jest implementacj± klasy prostego worka (wielu zbiorów).
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %install
