@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Set
-%define	pnam	Bag
+%define		pdir	Set
+%define		pnam	Bag
 Summary:	Set::Bag - bag (multiset) class
 Summary(pl):	Set::Bag - klasa prostego worka (wielu zbiorów)
 Name:		perl-Set-Bag
