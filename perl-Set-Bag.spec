@@ -6,7 +6,7 @@
 %define		pdir	Set
 %define		pnam	Bag
 Summary:	Set::Bag - bag (multiset) class
-Summary(pl):	Set::Bag - klasa prostego worka (wielu zbiorów)
+Summary(pl.UTF-8):   Set::Bag - klasa prostego worka (wielu zbiorÃ³w)
 Name:		perl-Set-Bag
 Version:	1.009
 Release:	1
@@ -23,8 +23,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This module implements a simple bag (multiset) class.
 
-%description -l pl
-Ten modu³ jest implementacj± klasy prostego worka (wielu zbiorów).
+%description -l pl.UTF-8
+Ten moduÅ‚ jest implementacjÄ… klasy prostego worka (wielu zbiorÃ³w).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
