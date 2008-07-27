@@ -9,7 +9,7 @@ Summary:	Set::Bag - bag (multiset) class
 Summary(pl.UTF-8):	Set::Bag - klasa prostego worka (wielu zbiorów)
 Name:		perl-Set-Bag
 Version:	1.009
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
