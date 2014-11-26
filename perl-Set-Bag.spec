@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Set
 %define		pnam	Bag
+%include	/usr/lib/rpm/macros.perl
 Summary:	Set::Bag - bag (multiset) class
 Summary(pl.UTF-8):	Set::Bag - klasa prostego worka (wielu zbiorów)
 Name:		perl-Set-Bag
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	0bdee0ac3cc396718738077d43cd8902
+URL:		http://search.cpan.org/dist/Set-Bag/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
