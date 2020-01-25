@@ -4,7 +4,6 @@
 
 %define		pdir	Set
 %define		pnam	Bag
-%include	/usr/lib/rpm/macros.perl
 Summary:	Set::Bag - bag (multiset) class
 Summary(pl.UTF-8):	Set::Bag - klasa prostego worka (wielu zbiorów)
 Name:		perl-Set-Bag
