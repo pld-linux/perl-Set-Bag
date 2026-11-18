@@ -7,13 +7,13 @@
 Summary:	Set::Bag - bag (multiset) class
 Summary(pl.UTF-8):	Set::Bag - klasa prostego worka (wielu zbiorów)
 Name:		perl-Set-Bag
-Version:	1.009
-Release:	3
+Version:	1.012
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	0bdee0ac3cc396718738077d43cd8902
+Source0:	https://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	a6f32bc9724ca4f22188f8660683423e
 URL:		http://search.cpan.org/dist/Set-Bag/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
